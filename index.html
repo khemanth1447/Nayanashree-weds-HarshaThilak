@@ -1,0 +1,711 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dr. Nayanashree. V & Dr. Harsha Thilak HN's Engagement</title>
+    <!-- Premium Fonts Added: Cormorant Garamond & Playfair Display -->
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=Montserrat:wght@300;400;500;600;700&family=Parisienne&family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,500;1,600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        :root {
+            --primary-navy: #1B2A3A;     /* Deep navy from her saree border & his watch dial */
+            --saree-rust: #BE5C3C;       /* Rich rust/terracotta from her saree */
+            --sage-green: #9CB2A1;       /* Soft sage green from his linen shirt */
+            --gold-accent: #D4AF37;      /* Warm traditional gold */
+            --jasmine-ivory: #FDFBF7;    /* Elegant off-white background */
+            --text-dark: #2C3E50;
+            --text-light: #707B7C;
+            --border-light: #EAE5D9;
+        }
+
+        /* Responsive Layout for PC & Mobile */
+        body {
+            font-family: 'Montserrat', sans-serif;
+            margin: 0;
+            padding: 0;
+            /* Silk wall-pattern background for Desktop PC viewing */
+            background-color: #0E1721; 
+            background-image: radial-gradient(rgba(212, 175, 55, 0.12) 1px, transparent 0),
+                              radial-gradient(rgba(212, 175, 55, 0.08) 1px, transparent 0);
+            background-size: 30px 30px;
+            background-position: 0 0, 15px 15px;
+            color: var(--text-dark);
+            text-align: center;
+            line-height: 1.6;
+            overflow-x: hidden;
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        /* Main Center Card */
+        .main-wrapper {
+            width: 100%;
+            max-width: 450px;
+            background-color: var(--jasmine-ivory);
+            box-shadow: 0 10px 40px rgba(0, 0, 0, 0.4);
+            min-height: 100vh;
+            position: relative;
+            border-left: 1px solid var(--border-light);
+            border-right: 1px solid var(--border-light);
+        }
+
+        /* Enhance Wrapper look on PC/Tablet */
+        @media (min-width: 600px) {
+            body {
+                padding: 40px 0;
+            }
+            .main-wrapper {
+                min-height: auto;
+                border-radius: 24px;
+                border: 3px solid var(--gold-accent);
+                overflow: hidden;
+            }
+            .top-header {
+                border-top-left-radius: 20px;
+                border-top-right-radius: 20px;
+            }
+        }
+
+        /* Flower Motion Graphics Styles */
+        .flower-petal {
+            position: fixed;
+            top: -50px;
+            pointer-events: none;
+            z-index: 9999;
+            width: 14px;
+            height: 14px;
+            opacity: 0.8;
+            border-radius: 15px 0 15px 10px;
+            background: linear-gradient(135deg, #FFF9EB, #FCEBC2); /* Jasmine White */
+            box-shadow: 0 2px 5px rgba(0,0,0,0.04);
+            animation: driftFall linear infinite;
+        }
+        .flower-petal.gold {
+            background: linear-gradient(135deg, #F9E8BA, #D4AF37); /* Traditional Gold */
+        }
+        .flower-petal.rust {
+            background: linear-gradient(135deg, #F5D5CB, #BE5C3C); /* Rich Rust */
+            border-radius: 15px 10px 15px 0;
+        }
+        @keyframes driftFall {
+            0% {
+                top: -50px;
+                transform: translateX(0) rotate(0deg);
+                opacity: 0;
+            }
+            10% {
+                opacity: 0.85;
+            }
+            90% {
+                opacity: 0.85;
+            }
+            100% {
+                top: 105vh;
+                transform: translateX(80px) rotate(360deg);
+                opacity: 0;
+            }
+        }
+
+        /* Top Header Navigation */
+        .top-header {
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            background-color: rgba(253, 251, 247, 0.95);
+            padding: 8px 0;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.03);
+            display: flex;
+            justify-content: center;
+            backdrop-filter: blur(5px);
+        }
+        .header-nav-container {
+            background-color: var(--primary-navy);
+            color: var(--jasmine-ivory);
+            border-radius: 25px;
+            padding: 10px 20px;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            width: 85%;
+            box-shadow: 0 4px 15px rgba(27, 42, 58, 0.2);
+        }
+        .header-nav-container a {
+            color: var(--jasmine-ivory);
+            text-decoration: none;
+            font-weight: 500;
+            font-size: 0.85em;
+            letter-spacing: 0.5px;
+            padding: 5px 12px;
+            border-radius: 15px;
+            transition: all 0.3s ease;
+        }
+        .header-nav-container a:hover {
+            background-color: rgba(255, 255, 255, 0.15);
+            color: var(--gold-accent);
+        }
+        .header-nav-container .icon {
+            font-size: 1.1em;
+            color: var(--gold-accent);
+        }
+
+        /* Hero Section with Parallax Space */
+        .hero {
+            position: relative;
+            padding-bottom: 30px;
+        }
+        .hero-image-container {
+            width: 100%;
+            height: 100vh; /* Scaled to full-screen view to show Lord Venkateshwara clearly */
+            background: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.75)), url('hands.jpeg') no-repeat center center;
+            background-size: cover;
+            position: relative;
+            border-bottom-left-radius: 35px;
+            border-bottom-right-radius: 35px;
+            box-shadow: inset 0 -80px 80px rgba(0,0,0,0.35), 0 8px 25px rgba(0,0,0,0.1);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-sizing: border-box;
+            padding: 0;
+        }
+        
+        .hero-image-container::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            height: 4px;
+            background: linear-gradient(90deg, transparent, var(--gold-accent), transparent);
+        }
+
+        /* Divine Image Arch Holder */
+        .divine-image-frame {
+            width: 150px;
+            height: 250px;
+            margin: 0 auto 15px;
+            border: 3px solid var(--gold-accent);
+            border-radius: 75px 75px 0 0; /* Temple archway format */
+            overflow: hidden;
+            box-shadow: 0 5px 20px rgba(212, 175, 55, 0.4);
+            background-color: #000;
+            position: relative;
+        }
+        .divine-image-frame img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        /* Custom parent invitation style */
+        .hero-overlay-text {
+            color: var(--jasmine-ivory);
+            padding: 20px;
+            z-index: 5;
+            width: 100%;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            box-sizing: border-box;
+        }
+        .parent-invitation-title {
+            font-size: 0.7em;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            color: var(--gold-accent);
+            margin-bottom: 8px;
+            font-weight: 600;
+        }
+        
+        /* Parents Name - Elegant & Prominent */
+        .parent-invitation-names {
+            font-family: 'Playfair Display', serif;
+            font-size: 1.15em;
+            line-height: 1.5;
+            font-weight: 600;
+            color: var(--jasmine-ivory);
+            margin-bottom: 12px;
+            letter-spacing: 0.5px;
+            text-shadow: 1px 1px 4px rgba(0,0,0,0.65);
+        }
+        .parent-invitation-names .amp {
+            font-family: 'Parisienne', cursive;
+            color: var(--gold-accent);
+            font-size: 1.25em;
+            display: block;
+            margin: 2px 0;
+        }
+        .hero-overlay-text .hero-subtitle {
+            font-size: 0.8em;
+            font-weight: 300;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            color: #E2E8F0;
+        }
+
+        /* Couple Card Styles (Starts cleanly in the next section) */
+        .hero-content-overlay {
+            position: relative;
+            margin: 40px auto 20px; /* Shifted to start beautifully below the 100vh fold */
+            width: 84%;
+            background-color: var(--jasmine-ivory);
+            border-radius: 20px;
+            padding: 30px 15px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+            border: 1px solid var(--border-light);
+            z-index: 10;
+        }
+        .hero .invite-line {
+            font-family: 'Playfair Display', serif;
+            font-size: 0.9em;
+            color: var(--saree-rust);
+            margin-bottom: 8px;
+            font-weight: 600;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+        }
+        
+        /* Couple & Parents two-line Layout Styling */
+        .couple-names-block-two-lines {
+            margin: 15px 0;
+        }
+        .couple-name {
+            font-family: 'Cormorant Garamond', serif;
+            font-size: 2.1em;
+            font-weight: 600;
+            color: var(--primary-navy);
+            display: block;
+            line-height: 1.1;
+            letter-spacing: 0.5px;
+        }
+        .ampersand {
+            font-family: 'Parisienne', cursive;
+            font-size: 1.8em;
+            color: var(--saree-rust);
+            display: block;
+            margin: 4px 0;
+            line-height: 1;
+        }
+
+        .hero .names-sub {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 0.8em;
+            font-weight: 600;
+            color: var(--sage-green);
+            margin-top: 10px;
+            letter-spacing: 3px;
+            text-transform: uppercase;
+        }
+
+        /* Decorative Divider */
+        .divider {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 15px 0;
+        }
+        .divider .line {
+            width: 50px;
+            height: 1px;
+            background-color: var(--gold-accent);
+        }
+        .divider i {
+            color: var(--gold-accent);
+            margin: 0 10px;
+            font-size: 0.9em;
+        }
+
+        /* Clean solid-navy background replaces image background */
+        .countdown-container {
+            margin: 20px 0;
+            padding: 30px 10px;
+            background-color: var(--primary-navy);
+            border-top: 2px solid var(--gold-accent);
+            border-bottom: 2px solid var(--gold-accent);
+        }
+        .countdown-title {
+            color: var(--gold-accent);
+            font-family: 'Playfair Display', serif;
+            font-size: 1.1em;
+            margin-bottom: 15px;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+        }
+        .countdown {
+            display: flex;
+            justify-content: center;
+            gap: 12px;
+        }
+        .countdown div {
+            width: 70px;
+            height: 70px;
+            background-color: rgba(253, 251, 247, 0.15);
+            color: var(--jasmine-ivory);
+            border-radius: 50%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            backdrop-filter: blur(4px);
+            border: 1px solid rgba(212, 175, 55, 0.5);
+        }
+        .countdown span {
+            font-size: 1.4em;
+            font-weight: 700;
+            line-height: 1;
+            margin-bottom: 2px;
+            color: var(--gold-accent);
+        }
+        .countdown label {
+            font-size: 0.6em;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            font-weight: 500;
+            opacity: 0.9;
+        }
+
+        /* Section Headings */
+        .section-heading {
+            font-family: 'Playfair Display', serif;
+            font-size: 1.7em;
+            color: var(--primary-navy);
+            margin: 35px 0 25px;
+            position: relative;
+            display: inline-block;
+            font-weight: 700;
+        }
+        .section-heading::after {
+            content: '✿';
+            position: absolute;
+            left: 50%;
+            bottom: -15px;
+            transform: translateX(-50%);
+            font-size: 0.6em;
+            color: var(--gold-accent);
+        }
+
+        /* Details Section */
+        .details-section {
+            padding: 20px;
+            background-color: var(--jasmine-ivory);
+            margin-bottom: 20px;
+        }
+        
+        /* Celebrations Card - Background image (gajra.jpeg) opacity opened up to ~20% visibility */
+        .details-card {
+            background: linear-gradient(rgba(253, 251, 247, 0.78), rgba(253, 251, 247, 0.82)), url('gajra.jpeg') no-repeat center center;
+            background-size: cover;
+            border: 1px solid var(--border-light);
+            border-radius: 20px;
+            padding: 25px 20px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.03);
+        }
+        .details p {
+            margin: 15px 0;
+            font-size: 0.95em;
+            color: var(--text-dark);
+            line-height: 1.6;
+            text-shadow: 1px 1px 1px rgba(253, 251, 247, 0.9); /* Subtle glow to maintain maximum legibility */
+        }
+        .details strong {
+            color: var(--saree-rust);
+            font-weight: 600;
+            font-size: 1.05em;
+            display: inline-block;
+            margin-bottom: 4px;
+            text-shadow: 1px 1px 1px rgba(253, 251, 247, 0.9);
+        }
+
+        /* Bold and Big Date/Time Container Styling */
+        .big-date-time-container {
+            margin: 20px 0;
+            padding: 18px 10px;
+            background-color: rgba(156, 178, 161, 0.15); /* Soft sage green background tint */
+            border-radius: 15px;
+            border: 1px dashed var(--gold-accent);
+            box-shadow: inset 0 0 10px rgba(212, 175, 55, 0.05);
+        }
+        .big-day {
+            font-family: 'Playfair Display', serif;
+            font-size: 1.8em;
+            font-weight: 700;
+            color: var(--saree-rust);
+            letter-spacing: 3px;
+            line-height: 1.2;
+        }
+        .big-date {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 1.35em;
+            font-weight: 700;
+            color: var(--primary-navy);
+            letter-spacing: 1px;
+            margin: 6px 0;
+        }
+        .big-time {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 1.35em; /* Increased size to make it big */
+            font-weight: 700;
+            color: var(--saree-rust); /* Changed color to rich rust so it stands out strongly */
+            letter-spacing: 1px;
+            margin-top: 6px;
+        }
+
+        .location-link {
+            color: var(--primary-navy);
+            text-decoration: none;
+            font-weight: 600;
+            transition: color 0.3s ease;
+            display: inline-block;
+            margin-top: 5px;
+            border-bottom: 1px dashed var(--gold-accent);
+            padding-bottom: 2px;
+        }
+        .location-link:hover {
+            color: var(--saree-rust);
+        }
+        .map-card {
+            background-color: var(--jasmine-ivory);
+            border-radius: 15px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+            margin: 25px auto 0;
+            overflow: hidden;
+            width: 95%;
+            border: 1px solid var(--border-light);
+        }
+        .map-card .map-header {
+            background-color: var(--primary-navy);
+            color: var(--gold-accent);
+            padding: 12px 15px;
+            font-size: 0.85em;
+            font-weight: 600;
+            letter-spacing: 1px;
+            text-align: left;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+        .map-card .map-container-iframe {
+            width: 100%;
+            height: 200px;
+            border: 0;
+            display: block;
+        }
+
+        .footer {
+            padding: 30px 20px;
+            background-color: var(--primary-navy);
+            color: rgba(253, 251, 247, 0.75);
+            font-size: 0.8em;
+            border-top: 2px solid var(--gold-accent);
+        }
+        .footer p {
+            margin: 5px 0;
+            font-weight: 300;
+        }
+        .footer .couple-names {
+            font-family: 'Cormorant Garamond', serif;
+            font-style: italic;
+            font-weight: 500;
+            font-size: 1.5em;
+            color: var(--gold-accent);
+            margin-bottom: 10px;
+        }
+        .footer-credit {
+            margin-top: 25px;
+            font-size: 0.78em;
+            opacity: 0.65;
+            border-top: 1px solid rgba(253, 251, 247, 0.1);
+            padding-top: 15px;
+            letter-spacing: 1px;
+        }
+
+        .content-block {
+            padding: 0 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="main-wrapper">
+
+        <div class="top-header">
+            <div class="header-nav-container">
+                <a href="#welcome">Welcome</a>
+                <a href="#details">Details</a>
+                <i class="fas fa-heart icon"></i>
+            </div>
+        </div>
+
+        <section id="welcome" class="hero">
+            <div class="hero-image-container">
+                <div class="hero-overlay-text">
+                    
+                    <!-- Divine Frame featuring the uploaded Lord Venkateshwara Image -->
+                    <div class="divine-image-frame">
+                        <img src="lord_venkateshwara.jpg" alt="Lord Venkateshwara">
+                    </div>
+
+                    <p class="parent-invitation-title">With the blessings of elders</p>
+                    <p class="parent-invitation-names">
+                        Smt. Manjula N & Sri. Venkatesh 
+                        <span class="amp">&</span>
+                        Smt. Padma T & Sri. Nagaraju HT <br> (Borewell Rajanna)
+                    </p>
+                    <p class="hero-subtitle">cordially invite you to share our joy</p>
+                </div>
+            </div>
+            
+            <!-- Details overlay card placed cleanly below the 100vh header viewport -->
+            <div class="hero-content-overlay">
+                <p class="invite-line">The Engagement of</p>
+                
+                <!-- Couple Names Reformatted on Two Lines -->
+                <div class="couple-names-block-two-lines">
+                    <span class="couple-name">Dr. Nayanashree. V</span>
+                    <span class="ampersand">&</span>
+                    <span class="couple-name">Dr. Harsha Thilak HN</span>
+                </div>
+
+                <div class="divider">
+                    <span class="line"></span>
+                    <i class="fas fa-ring"></i>
+                    <span class="line"></span>
+                </div>
+                <p class="names-sub">Two Paths, One Journey</p>
+            </div>
+        </section>
+
+        <!-- Solid-navy background replaces image background -->
+        <div class="countdown-container">
+            <div class="countdown-title">Counting Down to the Big Day</div>
+            <div class="countdown">
+                <div><span id="days">00</span><label>Days</label></div>
+                <div><span id="hours">00</span><label>Hours</label></div>
+                <div><span id="minutes">00</span><label>Minutes</label></div>
+                <div><span id="seconds">00</span><label>Seconds</label></div>
+            </div>
+        </div>
+
+        <section id="details" class="details-section">
+            <h2 class="section-heading">The Celebration</h2>
+            <div class="content-block details">
+                
+                <!-- Celebrations Card - Background image (gajra.jpeg) opacity opened up to ~20% visibility -->
+                <div class="details-card">
+                    
+                    <!-- Grand Date, Day and Time Display -->
+                    <div class="big-date-time-container">
+                        <div class="big-day">SUNDAY</div>
+                        <div class="big-date">JULY 12th, 2026</div>
+                        <div class="big-time">at 11:30 AM Onwards</div>
+                    </div>
+
+                    <div style="width: 30px; height: 1px; background-color: var(--gold-accent); margin: 15px auto;"></div>
+                    <p>
+                        <strong>Venue</strong><br>
+                        <a href="https://www.google.com/maps/search/?api=1&query=KCN+PALACE,+No.+104/1,+Kannur+Circle,+Next+to+Bus+Stop,+Opp.+to+Dignity+High+School,+Bangalore+-+560+077" target="_blank" class="location-link">
+                            <i class="fas fa-map-marker-alt"></i> KCN PALACE<br>
+                            No. 104/1, Kannur Circle, <br> 
+                            Next to Bus Stop, Opp. to Dignity High School, <br> 
+                            Bangalore - 560 077
+                        </a>
+                    </p>
+                </div>
+            </div>
+            <div class="map-card">
+                <div class="map-header">
+                    <i class="fas fa-map-marked-alt"></i> Interactive Location Map
+                </div>
+                <!-- Highlighted direct geographic query -->
+                <iframe class="map-container-iframe" src="https://maps.google.com/maps?q=KCN%20Palace%20Kannur%20Circle%20Bangalore&t=&z=15&ie=UTF8&iwloc=&output=embed" allowfullscreen="" loading="lazy"></iframe>
+            </div>
+        </section>
+
+        <div class="footer">
+            <div class="couple-names">Dr. Nayanashree. V & Dr. Harsha Thilak HN</div>
+            <p style="font-size: 0.9em; margin-top: 10px; opacity: 0.8;">Thank you for being a part of our celebrations.</p>
+            
+            <!-- Printer Credit updated to Designed & Published by -->
+            <div class="footer-credit">
+                Designed & Published by: SK Printers, Hennur <i class="fas fa-phone-alt" style="font-size: 0.85em; margin-left: 4px; color: var(--gold-accent);"></i> 9845262552
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Motion Graphics (Flower Petal Spawner)
+        function createPetals() {
+            const container = document.body;
+            const petalCount = 12; // Balanced density to keep scrolling lightweight on mobile
+            const colors = ['', 'gold', 'rust'];
+
+            for (let i = 0; i < petalCount; i++) {
+                const petal = document.createElement('div');
+                petal.className = `flower-petal ${colors[Math.floor(Math.random() * colors.length)]}`;
+                
+                // Randomize horizontal spacing, timing, and speed
+                petal.style.left = `${Math.random() * 100}vw`;
+                petal.style.animationDelay = `${Math.random() * 10}s`;
+                petal.style.animationDuration = `${8 + Math.random() * 7}s`;
+                
+                // Randomize leaf size slightly for depth
+                const size = 10 + Math.random() * 8;
+                petal.style.width = `${size}px`;
+                petal.style.height = `${size}px`;
+                
+                container.appendChild(petal);
+            }
+        }
+        window.addEventListener('DOMContentLoaded', createPetals);
+
+        // Countdown Timer Logic
+        const engagementDate = new Date("Jul 12, 2026 11:30:00").getTime();
+
+        const x = setInterval(function() {
+            const now = new Date().getTime();
+            const distance = engagementDate - now;
+
+            const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+            const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+            const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+            const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+            document.getElementById("days").innerHTML = days < 10 ? "0" + days : days;
+            document.getElementById("hours").innerHTML = hours < 10 ? "0" + hours : hours;
+            document.getElementById("minutes").innerHTML = minutes < 10 ? "0" + minutes : minutes;
+            document.getElementById("seconds").innerHTML = seconds < 10 ? "0" + seconds : seconds;
+
+            if (distance < 0) {
+                clearInterval(x);
+                document.getElementById("days").innerHTML = "00";
+                document.getElementById("hours").innerHTML = "00";
+                document.getElementById("minutes").innerHTML = "00";
+                document.getElementById("seconds").innerHTML = "00";
+                document.querySelector('.countdown').innerHTML = "<span style='font-size:1.1em; font-weight:600; color:var(--jasmine-ivory);'>The Big Day Is Here!</span>";
+            }
+        }, 1000);
+
+        // Smooth Scrolling for Navigation
+        document.querySelectorAll('.header-nav-container a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+
+                const targetId = this.getAttribute('href').substring(1);
+                const targetElement = document.getElementById(targetId);
+                
+                if (targetElement) {
+                    const offset = targetElement.getBoundingClientRect().top + window.pageYOffset - document.querySelector('.top-header').offsetHeight;
+                    window.scrollTo({
+                        top: offset,
+                        behavior: 'smooth'
+                    });
+                }
+            });
+        });
+    </script>
+</body>
+</html>
